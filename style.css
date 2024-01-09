@@ -1,0 +1,12 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 2px;
+}
+
+.square {
+    width: 5px;
+    height: 5px;
+    background-color: #4CAF50; /* Green background */
+}
