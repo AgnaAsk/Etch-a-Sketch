@@ -1,12 +1,28 @@
-#grid-container {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    gap: 2px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 5px;
+    width: 960px; /* Set this to your desired width */
+}
+
+.container div {
+    width: calc((960px - (3 * 5px)) / 4);
+    height: calc((960px - (3 * 5px)) / 4);
 }
 
 .square {
-    width: 5px;
-    height: 5px;
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50;
+    
+}
+
+.squarehoover {
+    background-color: blueviolet;
+    
+}
+
+.button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
